@@ -5,6 +5,7 @@ import com.fasterxml.jackson.annotation.JsonProperty;
 import javax.persistence.Entity;
 import javax.persistence.GeneratedValue;
 import javax.persistence.Id;
+import javax.persistence.Lob;
 
 @Entity
 public class RssEntry {
@@ -15,6 +16,7 @@ public class RssEntry {
     private Long id;
     @JsonProperty
     private String title;
+    @Lob
     @JsonProperty
     private String uri;
 
